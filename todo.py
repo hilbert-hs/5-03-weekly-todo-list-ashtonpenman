@@ -21,7 +21,7 @@ def get(day, todos):
     if day in todos:
         print(f"You have to {todos[day]} on {day}.")
 
-while True:
+while descision != "quit":
     descision = input("What would you like to do? (add/get/quit) ")
     day = input("What day would you like to update/get? ")
     if descision == "add":
@@ -29,5 +29,3 @@ while True:
         add(day, task, todos)
     elif descision == "get":
         get(day, todos)
-    elif descision == "quit":
-        pass
